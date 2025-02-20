@@ -22,7 +22,7 @@ function Login() {
               
                 <div class="flex justify-center items-center mt-4">
                     <p class="inline-flex items-center text-white font-medium text-xs text-center">
-                        <span class="ml-2">Nem regisztráltál még?<a href="/Register" class="text-xs ml-2 text-blue-500 font-semibold">Regisztrálj most&rarr;</a> <br/>
+                        <span class="ml-2">Nem regisztráltál még?<a href="/Register" class="text-xs ml-2 text-blue-500 font-semibold">Rregisztrálj most&rarr;</a> <br/>
                         </span>
                     </p>
                 </div>
