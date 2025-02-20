@@ -2,7 +2,7 @@ import React from 'react'
 
 function Register() {
   return (
-    <div className="flex items-center justify-center p-12">
+    <div className="flex flex-col min-h-screen items-center justify-start p-12">
     <div className="mx-auto w-full max-w-[550px]">
         <form>
             <div className="mb-5">
@@ -12,6 +12,15 @@ function Register() {
                 <input type="text" name="name" id="name" placeholder="Full Name"
                     className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
             </div>
+            
+            <div class="w-full flex flex-col gap-2">
+            <label for="name" className="mb-3 block text-base font-medium text-[#ffffff]">
+                    Jelszó
+                </label>
+                <input type="password" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" placeholder="••••••••" /> <br />
+
+            </div>
+            
             <div className="mb-5">
                 <label for="phone" className="mb-3 block text-base font-medium text-[#ffffff]">
                     Telefonszám
@@ -29,7 +38,7 @@ function Register() {
             <div className="-mx-3 flex flex-wrap">
                 <div className="w-full px-6 sm:w-1/2">
                     <div className="mb-5">
-                        <label for="date" className="mb-3 block text-base font-medium text-[#ffffff]">
+                        <label for="date" className="mb-5 block text-base font-medium text-[#ffffff]">
                             Születési dátum
                         </label>
                         <input type="date" name="date" id="date"
