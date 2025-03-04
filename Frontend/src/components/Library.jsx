@@ -2,7 +2,7 @@ import React from 'react'
 
 function Library() {
   return (
-    <div>Browser</div>
+    <div className='min-h-screen'>Browser</div>
   )
 }
 
