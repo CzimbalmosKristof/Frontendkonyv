@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom'
+
 import React from 'react'
 
 function Register() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-start p-12">
+    <div className=" min-h-screen flex flex-col min-h-screen items-center justify-start p-12">
     <div className="mx-auto w-full max-w-[550px]">
         <form>
             <div className="mb-5">
@@ -77,6 +79,14 @@ function Register() {
                                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                     </div>
+                
+                
+                    <div class="flex justify-center items-center mt-4">
+                    <p class="inline-flex items-center text-white font-medium text-xs text-center">
+                        <span class="ml-2">Van már fiókja?<Link to="/Login" class="text-xs ml-2 text-blue-500 font-semibold">Bejelentkezés&rarr;</Link > <br/>
+                        </span>
+                    </p>
+                    </div>       
                 </div>
             </div>
 

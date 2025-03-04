@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Login() {
   return (
-    <div className="flex items-center justify-center p-12">
-    <div className="mx-auto w-full max-w-[550px]">
+    <div className=" flex flex-col min-h-screen items-center justify-center p-12 bg-gray-950">
+    <div className="-mx-auto w-full max-w-[550px] ">
         <form>
             <div className="mb-5">
                 <label for="name" className="mb-3 block text-base font-medium text-[#ffffff]">
@@ -22,7 +23,7 @@ function Login() {
               
                 <div class="flex justify-center items-center mt-4">
                     <p class="inline-flex items-center text-white font-medium text-xs text-center">
-                        <span class="ml-2">Nem regisztráltál még?<a href="/Register" class="text-xs ml-2 text-blue-500 font-semibold">Regisztrálj most&rarr;</a> <br/>
+                        <span class="ml-2">Nem regisztráltál még?<Link to="/Register" class="text-xs ml-2 text-blue-500 font-semibold">Regisztrálj most&rarr;</Link > <br/>
                         </span>
                     </p>
                 </div>

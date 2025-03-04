@@ -8,7 +8,7 @@ import Footer from './components/Footer.jsx'
 import {BrowserRouter,Routes,Route,Navigate} from 'react-router-dom';
 function App() {
     return (
-        <div>
+        <div className='bg-gray-950'>
          <BrowserRouter>
            <Menu />
            <Routes>

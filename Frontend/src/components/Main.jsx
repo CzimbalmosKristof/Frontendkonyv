@@ -3,7 +3,7 @@ import React from 'react'
 function Main() {
   return (
     <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
-    <div className="absolute inset-0">
+    <div className="min-h-screen absolute inset-0">
       <img src="https://cdn.pixabay.com/photo/2015/10/10/13/03/prague-980732_1280.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
       <div className="absolute inset-0 bg-black opacity-50"></div>
     </div>
