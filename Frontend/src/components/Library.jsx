@@ -1,8 +1,40 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
+import axios from 'axios';
+import Book from './Book';
 
 function Library() {
+  const [books, setBook] = useState([]);
+  const [refresh, setRefresh] = useState(false);
+
+  const frissites = () => {
+    setRefresh(prev => !prev);
+  }
+
+  useEffect(() => {
+    axios.get(`${import.meta.env.VITE_BASE_URL}/books`)
+      .then(res => setBook(res.data))
+      .catch(err => alert(err.message));
+  }, [refresh]);
+
   return (
-    <div className='min-h-screen'>Browser</div>
+<div className="bg-sky-100 min-h-screen p-8">
+  <h1 className="text-4xl font-bold text-center text-sky-700 mb-6">Könyvtár</h1>
+  
+  <div className="flex justify-center mb-8">
+    <button 
+      className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded shadow-lg transition duration-300"
+      onClick={frissites}>
+      Frissítés
+    </button>
+  </div>
+  
+  <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 justify-items-center">
+    {books.map((konyv) => (
+      <Book key={konyv.id} book={konyv} />
+    ))}
+  </div>
+</div>
   )
 }
 
